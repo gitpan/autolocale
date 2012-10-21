@@ -1,10 +1,10 @@
 package autolocale;
 use strict;
 use warnings;
-use 5.010;
+use 5.010000;
 use POSIX qw(setlocale LC_ALL);
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 my $wiz = wizard(
     set => sub {
@@ -30,7 +30,8 @@ BEGIN {
     else {
         # Fallback Pure-Perl mode when can't use Variable::Magic
         {
-            package autolocale::Tie::Scalar;
+            package # Hiding package
+            autolocale::Tie::Scalar;
             require Tie::Scalar;
             our @ISA = qw(Tie::StdScalar);
 
