@@ -49,7 +49,7 @@
    "provides" : {
       "autolocale" : {
          "file" : "lib/autolocale.pm",
-         "version" : "0.03"
+         "version" : "0.04"
       }
    },
    "release_status" : "stable",
@@ -64,5 +64,5 @@
          "url" : "git://github.com/hideo55/p5-autolocale.git"
       }
    },
-   "version" : "0.03"
+   "version" : "0.04"
 }
