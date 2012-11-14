@@ -25,7 +25,7 @@ no_index:
 provides:
   autolocale:
     file: lib/autolocale.pm
-    version: 0.04
+    version: 0.05
 recommends:
   Variable::Magic: 0
 requires:
@@ -35,4 +35,4 @@ resources:
   bugtracker: https://github.com/hideo55/p5-autolocale/issues
   license: http://dev.perl.org/licenses/
   repository: git://github.com/hideo55/p5-autolocale.git
-version: 0.04
+version: 0.05
