@@ -1,5 +1,8 @@
 Revision history for Perl extension autolocale
 
+0.06 2013-07-04T22:11:28Z
+    - Switch to Minilla
+
 0.05    Thu Nov 15 02:50:00 2012
         - Fixed broken tests for several environments
 

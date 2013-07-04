@@ -1,16 +1,11 @@
 {
-   "abstract" : "auto call setlocale when set $ENV{\"LANG\"}",
+   "abstract" : "auto call setlocale() when set $ENV{\"LANG\"}",
    "author" : [
-      "Hideaki Ohno<hide.o.j55@gmail.com>"
+      "Hideaki Ohno <hide.o.j55 {at} gmail.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Module::Build version 0.38, CPAN::Meta::Converter version 2.112150",
-   "keywords" : [
-      "locale"
-   ],
-   "license" : [
-      "perl_5"
-   ],
+   "generated_by" : "Minilla/v0.5.3",
+   "license" : "perl_5",
    "meta-spec" : {
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
       "version" : "2"
@@ -21,27 +16,40 @@
          "t",
          "xt",
          "inc",
-         "eg"
+         "share",
+         "eg",
+         "examples",
+         "author"
       ]
    },
    "prereqs" : {
       "build" : {
          "requires" : {
-            "Test::Fatal" : 0,
+            "Test::Fatal" : "0",
             "Test::More" : "0.98"
          }
       },
       "configure" : {
          "requires" : {
+            "CPAN::Meta" : "0",
+            "CPAN::Meta::Prereqs" : "0",
             "Module::Build" : "0.38"
+         }
+      },
+      "develop" : {
+         "requires" : {
+            "Test::CPAN::Meta" : "0",
+            "Test::MinimumVersion" : "0.10108",
+            "Test::Pod" : "1.41",
+            "Test::Spellunker" : "v0.2.7"
          }
       },
       "runtime" : {
          "recommends" : {
-            "Variable::Magic" : 0
+            "Variable::Magic" : "0"
          },
          "requires" : {
-            "POSIX" : 0,
+            "POSIX" : "0",
             "perl" : "5.010000"
          }
       }
@@ -49,7 +57,7 @@
    "provides" : {
       "autolocale" : {
          "file" : "lib/autolocale.pm",
-         "version" : "0.05"
+         "version" : "0.06"
       }
    },
    "release_status" : "stable",
@@ -57,12 +65,14 @@
       "bugtracker" : {
          "web" : "https://github.com/hideo55/p5-autolocale/issues"
       },
-      "license" : [
-         "http://dev.perl.org/licenses/"
-      ],
+      "homepage" : "https://github.com/hideo55/p5-autolocale",
       "repository" : {
-         "url" : "git://github.com/hideo55/p5-autolocale.git"
+         "url" : "git://github.com/hideo55/p5-autolocale.git",
+         "web" : "https://github.com/hideo55/p5-autolocale"
       }
    },
-   "version" : "0.05"
+   "version" : "0.06",
+   "x_contributors" : [
+      "hideo55 <hide.o.j55@gmail.com>"
+   ]
 }
